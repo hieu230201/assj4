@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="entitys.Videos">
+        <table name="videos" schema="ass" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="title">
+                <column name="title"/>
+            </basic>
+            <basic name="poster">
+                <column name="poster" nullable="false"/>
+            </basic>
+            <basic name="description">
+                <column name="description" nullable="false"/>
+            </basic>
+            <basic name="views">
+                <column name="views" precision="11"/>
+            </basic>
+            <basic name="active">
+                <column name="active" precision="4"/>
+            </basic>
+            <basic name="href">
+                <column name="href" length="200"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
