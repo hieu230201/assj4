@@ -80,6 +80,8 @@ public class UserController extends HttpServlet {
 	private void doPostLogin(HttpSession session, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			String email = request.getParameter("username");
 			String pass = request.getParameter("pass");
+			System.out.println(email);
+			System.out.println(pass);
 			Users u = userDao.findOne(email, pass);
 			if(u != null) {
 				session.setAttribute(SessionAttr.CURRENT_USER, u);				

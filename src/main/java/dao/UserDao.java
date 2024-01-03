@@ -1,5 +1,7 @@
 package dao;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -9,7 +11,7 @@ import entitys.Users;
 
 import util.JpaUtil;
 
-public class UserDao {
+public class UserDao extends Thread{
 	public static final	EntityManager manager = JpaUtil.getEntityManager();
 	
 	@SuppressWarnings("deprecation")
@@ -93,7 +95,8 @@ public class UserDao {
 	}
 	
 	public List<Users> findAll(int page, int size) {
-		List<Users> list = null;
+
+		List<Users> list = new ArrayList<>();
 		try {
 			manager.getTransaction().begin();
 			String sql = "select o from Users o where  o.isActive = 1";

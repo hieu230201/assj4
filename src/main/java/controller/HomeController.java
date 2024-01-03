@@ -28,6 +28,7 @@ public class HomeController extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("heloooo");
 		HttpSession session = request.getSession();
 		String path = request.getServletPath();
 		if(path.equals("/index")) {

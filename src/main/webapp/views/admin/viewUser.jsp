@@ -423,7 +423,6 @@
 	function deleteUser(id) {
 			$.ajax({
 				url: '/assJava4/admin/user?action=delete&id='+id
-			
 			}).then(function (data) {
 				window.location.href = "http://localhost:8080/assJava4/admin/user?action=view";
 			}).fail(function (error) {

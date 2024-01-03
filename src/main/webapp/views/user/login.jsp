@@ -12,7 +12,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="teamplates/comboLogin/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="teamplates/comboLogin/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="templates/comboLogin/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="teamplates/comboLogin/fonts/iconic/css/material-design-iconic-font.min.css">
 <!--===============================================================================================-->
